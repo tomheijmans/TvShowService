@@ -1,0 +1,2 @@
+# About TvShowService
+This is a demo application which scrapes the TvMaze API for shows and their cast. Data will be save to a database using entity framework core and it can be retrieved using the webapi (url: http://localhost:{portNumber}/api/tvshow?pageNumber=2&pageSize=3);
