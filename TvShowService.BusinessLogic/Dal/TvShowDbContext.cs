@@ -16,7 +16,7 @@ namespace TvShowService.BusinessLogic.Dal
               : base(options)
         {
             // TODO generate database instead of ensurecreated
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

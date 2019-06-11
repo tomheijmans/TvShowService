@@ -26,8 +26,9 @@ namespace TvShowService
 
             services.AddHostedService<ScrapeService>()
                 .AddBusinessLogic(opts =>
+                    opts.UseInMemoryDatabase("InMemTvShow"))
                     // TODO connection string from config
-                    opts.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TvShowServiceDb;Trusted_Connection=True;MultipleActiveResultSets=true"))
+                    //opts.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=TvShowServiceDb;Trusted_Connection=True;MultipleActiveResultSets=true"))
                 .AddTvMazeClient();
         }
 
